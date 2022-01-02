@@ -4,12 +4,12 @@ import path from "path";
 function handler(req, res) {
   if (req.method === "POST") {
     const email = req.body.email;
-    const feedbackText = req.body.feedbackText;
+    const feedback = req.body.feedback;
 
     const newFeedback = {
       id: new Date().toISOString(),
       email,
-      feedbackText,
+      feedback,
     };
 
     // store in js file
