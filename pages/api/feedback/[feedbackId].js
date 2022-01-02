@@ -1,4 +1,4 @@
-import { buildFeedabackPath, extractFeedbackData } from "./feedback";
+import { buildFeedabackPath, extractFeedbackData } from ".";
 
 const handler = (req, res) => {
   if (req.method === "GET") {
